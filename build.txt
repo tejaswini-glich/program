@@ -1,0 +1,42 @@
+
+# DB using files
+import json
+import os
+import time
+
+#class for DB
+class fileDB:
+    filePath = ""
+    rootUser = ""
+    def_init_(self,path="./data.json"):
+        self.filePath=Path
+        self.perm=True
+
+        filesize=os.path.getsize("./data.json")
+        if filesize==0:
+            data={}
+
+            F=open(path,"a")
+            json.dump(data,Findent=4)
+
+        else:
+            with open(self.filePath,mode='r')as F:
+
+                LastData=json.load(F)
+
+                    if LastData["user"]!=sys.argv[0]:
+                        perm=False
+
+        def validateDB(self):file_size=os.path.getsize(self.filePath)
+
+            if int(file_size)>1024:
+                return True
+
+            else:
+                return False
+
+            #create object in db(insert)
+
+            M=fileDB()
+
+            M.create("data",{"name":"kf"},208)PC-201.7846.77
